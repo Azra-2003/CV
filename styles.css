@@ -35,7 +35,7 @@ body {
 
 .resume .resume_left {
   width: 280px;
-  background: #070707;
+  background: #959896;
 }
 
 .resume .resume_left .resume_profile {
@@ -57,16 +57,16 @@ body {
 }
 
 .resume .resume_left .bold {
-  color: #fff;
+  color: #070707;
 }
 
 .resume .resume_left .regular {
-  color: #b1eaff;
+  color: #070707;
 }
 
 .resume .resume_item {
   padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
+  border-bottom: 2px solid #082c38;
 }
 
 .resume .resume_left .resume_item:last-child,
@@ -87,8 +87,8 @@ body {
 .resume .resume_left ul li .icon {
   width: 35px;
   height: 35px;
-  background: #fff;
-  color: #0bb5f4;
+  background: #0b0b0b;
+  color: #075e7e;
   border-radius: 50%;
   margin-right: 15px;
   font-size: 16px;
@@ -104,13 +104,13 @@ body {
 }
 
 .resume .resume_left ul li .data {
-  color: #b1eaff;
+  color: #043d52;
 }
 
 .resume .resume_left .resume_skills ul li {
   display: flex;
   margin-bottom: 10px;
-  color: #b1eaff;
+  color: #09022a;
   justify-content: space-between;
   align-items: center;
 }
@@ -123,7 +123,7 @@ body {
   width: 40%;
   margin: 0 5px;
   height: 5px;
-  background: #009fd9;
+  background: #697ea6;
   position: relative;
 }
 
@@ -136,13 +136,13 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: #fff;
+  background: #44408c;
 }
 
 .resume .resume_left .resume_frameworks ul li {
   display: flex;
   margin-bottom: 10px;
-  color: #b1eaff;
+  color: #09022a;
   justify-content: space-between;
   align-items: center;
 }
@@ -155,7 +155,7 @@ body {
   width: 60%;
   margin: 0 5px;
   height: 5px;
-  background:  #009fd9; /* Green progress bar for frameworks */
+  background:  #1974b1; /* Green progress bar for frameworks */
   position: relative;
 }
 
@@ -174,7 +174,7 @@ body {
 .resume .resume_left .resume_other_skills ul li {
   display: flex;
   margin-bottom: 10px;
-  color: #b1eaff;
+  color: #09022a;
   justify-content: space-between;
   align-items: center;
 }
@@ -206,7 +206,7 @@ body {
 }
 
 .resume .resume_left .resume_social .semi-bold {
-  color: #fff;
+  color: #0b0b0b;
   margin-bottom: 3px;
 }
 
@@ -313,7 +313,7 @@ body {
 }
 
 .data p a {
-    color: rgb(252, 248, 248); /* Set the color of the links to black */
+    color: #09022a; /* Set the color of the links to black */
     text-decoration: none; /* Remove underline */
 }
 
@@ -322,7 +322,7 @@ body {
 }
 
 .data a {
-    color: rgb(242, 238, 238); /* Set the color of the links to black */
+    color: #09022a; /* Set the color of the links to black */
     text-decoration: none; /* Remove underline */
 }
 
