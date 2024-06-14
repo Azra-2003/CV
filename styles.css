@@ -9,10 +9,10 @@
 }
 
 body {
-  background: #585c68;
+  background: #999191;
   font-size: 14px;
   line-height: 22px;
-  color: #555555;
+  color: #060606
 }
 
 .bold {
@@ -35,7 +35,7 @@ body {
 
 .resume .resume_left {
   width: 280px;
-  background: #0bb5f4;
+  background: #070707;
 }
 
 .resume .resume_left .resume_profile {
@@ -120,7 +120,7 @@ body {
 }
 
 .resume .resume_left .resume_skills ul li .skill_progress {
-  width: 60%;
+  width: 40%;
   margin: 0 5px;
   height: 5px;
   background: #009fd9;
@@ -132,6 +132,72 @@ body {
 }
 
 .resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_frameworks ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_frameworks ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_frameworks ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background:  #009fd9; /* Green progress bar for frameworks */
+  position: relative;
+}
+
+.resume .resume_left .resume_frameworks ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_frameworks ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_other_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_other_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_other_skills ul li .skill_progress {
+  width: 30%;
+  margin: 0 5px;
+  height: 5px;
+  background: #4caf50; /* Orange progress bar for other skills */
+  position: relative;
+}
+
+.resume .resume_left .resume_other_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span,
+.resume .resume_left .resume_frameworks ul li .skill_progress span,
+.resume .resume_left .resume_other_skills ul li .skill_progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -200,35 +266,122 @@ body {
   height: 115px;
   background: #0bb5f4;
 }
+.resume .resume_right .resume_hobby {
+    margin-bottom: 40px; /* Increase margin to create more space */
+}
+
+.resume .resume_right .resume_hobby .title {
+    margin-bottom: 10px;
+}
 
 .resume .resume_right .resume_hobby ul {
-  display: flex;
-  justify-content: space-between;
+    padding-left: 40px;
 }
 
 .resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #0bb5f4;
-  border-radius: 50%;
-  position: relative;
-  color: #0bb5f4;
-}
-
-.resume .resume_right .resume_hobby ul li i {
-  font-size: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    line-height: 1.6; /* Adjust line height for better spacing */
 }
 
 .resume .resume_right .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -52px;
-  width: 50px;
-  height: 2px;
-  background: #0bb5f4;
+    content: '\2022'; /* Unicode character for bullet */
+    position: absolute;
+    left: -20px;
+    color: #0bb5f4;
 }
 
-.resume .resume_right .resume_hobby ul li:last-child:before {
-  display: none;
+.resume .resume_right .resume_hobby ul li .semi-bold {
+    font-weight: 500;
+    font-size: 16px;
+    color: #555555;
+}
+
+.resume .resume_right .resume_hobby ul li p {
+    margin-top: 5px;
+    color: #555555;
+    font-size: 14px;
+}
+
+/* Horizontal line under hobbies section */
+.resume .resume_right .resume_hobby:after {
+    content: '';
+    display: block;
+    margin-top: 20px; /* Adjust margin to control spacing between hobbies and line */
+    width: 100%; /* Full width of container */
+}
+
+.data p a {
+    color: rgb(252, 248, 248); /* Set the color of the links to black */
+    text-decoration: none; /* Remove underline */
+}
+
+.data p a:hover {
+    text-decoration: underline; /* Underline on hover (optional) */
+}
+
+.data a {
+    color: rgb(242, 238, 238); /* Set the color of the links to black */
+    text-decoration: none; /* Remove underline */
+}
+
+.data a:hover {
+    text-decoration: underline; /* Underline on hover (optional) */
+}
+
+.project-link {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles for Languages I Speak and Certifications */
+.resume .resume_right .resume_languages .title,
+.resume .resume_right .resume_certifications .title{
+    margin-top: 30px;
+}
+
+
+.resume .resume_right .resume_languages .title p.bold,
+.resume .resume_right .resume_certifications .title p.bold {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Adding space above Certifications */
+.resume .resume_right .resume_certifications .title p.bold {
+    margin-top: 20px; /* Adjust this value to increase or decrease the space */
+}
+
+.resume .resume_right .resume_languages ul li,
+.resume .resume_right .resume_certifications ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    list-style: none;
+    color: #555;
+}
+
+.resume .resume_right .resume_languages ul li:before,
+.resume .resume_right .resume_certifications ul li:before {
+    content: "\2022";
+    color: #0bb5f4;
+    position: absolute;
+    left: 0;
+}
+
+.resume .resume_right .resume_languages:after,
+.resume .resume_right .resume_certifications:after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    border-bottom: 2px solid #fafbfb;
+    width: 100%;
 }
