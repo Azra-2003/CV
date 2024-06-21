@@ -155,7 +155,7 @@ body {
   width: 60%;
   margin: 0 5px;
   height: 5px;
-  background:  #1974b1; /* Green progress bar for frameworks */
+  background:  #f9fafa; /*Progress bar for frameworks */
   position: relative;
 }
 
@@ -168,7 +168,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: #fff;
+  background: #07e825;
 }
 
 .resume .resume_left .resume_other_skills ul li {
@@ -187,7 +187,7 @@ body {
   width: 30%;
   margin: 0 5px;
   height: 5px;
-  background: #4caf50; /* Orange progress bar for other skills */
+  background: #fcfdfc; /* Orange progress bar for other skills */
   position: relative;
 }
 
@@ -202,7 +202,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: #fff;
+  background: #1ba819;
 }
 
 .resume .resume_left .resume_social .semi-bold {
