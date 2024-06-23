@@ -339,49 +339,38 @@ body {
     text-decoration: underline;
 }
 
-/* Styles for Languages I Speak and Certifications */
-.resume .resume_right .resume_languages .title,
-.resume .resume_right .resume_certifications .title{
-    margin-top: 30px;
+/* Styles for Languages I Speak */
+.resume .resume_right .resume_languages .title {
+  margin-top: 30px;
 }
 
-
-.resume .resume_right .resume_languages .title p.bold,
-.resume .resume_right .resume_certifications .title p.bold {
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+.resume .resume_right .resume_languages .title p.bold {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* Adding space above Certifications */
-.resume .resume_right .resume_certifications .title p.bold {
-    margin-top: 20px; /* Adjust this value to increase or decrease the space */
+.resume .resume_right .resume_languages ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  list-style: none;
+  color: #555;
 }
 
-.resume .resume_right .resume_languages ul li,
-.resume .resume_right .resume_certifications ul li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 30px;
-    list-style: none;
-    color: #555;
+.resume .resume_right .resume_languages ul li:before {
+  content: "\2022";
+  color: #0bb5f4;
+  position: absolute;
+  left: 0;
 }
 
-.resume .resume_right .resume_languages ul li:before,
-.resume .resume_right .resume_certifications ul li:before {
-    content: "\2022";
-    color: #0bb5f4;
-    position: absolute;
-    left: 0;
-}
-
-.resume .resume_right .resume_languages:after,
-.resume .resume_right .resume_certifications:after {
-    content: "";
-    display: block;
-    margin-top: 20px;
-    border-bottom: 2px solid #fafbfb;
-    width: 100%;
+.resume .resume_right .resume_languages:after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  border-bottom: 2px solid #fafbfb;
+  width: 100%;
 }
